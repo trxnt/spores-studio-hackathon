@@ -9,8 +9,8 @@ import bootstrap from "bootstrap";
 
 // A list of songs: grabbed directly from catalog, but could use Zora API here.
 let songs = [
-  "https://catalog.mypinata.cloud/ipfs/QmbvUVdh5SiX5mRdMUR1s4Kg6eMfddbXYcJpf2spcNedEY", // DJ Planet Express - Weak
-  "https://catalog.mypinata.cloud/ipfs/QmVNy1g26zVfCQWPYsuSKhq2ie4f8S3WpM6EthSjtLcU1i", // allem iversom - "where it's warm"
+  "https://ipfs.io/ipfs/bafybeicghj6slqw7nqpzumn6hg42e37aqp2lfay3yohs3z2ldjyymmyh6m", // YBL 2.0
+  "https://ipfs.io/ipfs/bafybeigsxoei5wsienmafmkkw6hamocjdt4e5zjljm3wxzvwgvxmvtjegq", // Purr 2.0
   "https://catalog.mypinata.cloud/ipfs/QmWWwDepZfDKqypi5DXzYzGk7tVCdpDaTPLFSysA3PBRrm", // Dutchyyy
 ];
 
