@@ -52,7 +52,6 @@ function App() {
       <div>Cross Fade: {crossFade}</div>
       {isStuttering ? <div>Stuttering at 1/{stutterRate} rate</div> : ""}
 
-      <br></br>
 
       <SporeEmbed
         main={main} // url to main track (can be switched w/o interrupting)
