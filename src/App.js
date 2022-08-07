@@ -15,12 +15,12 @@ let songs = [
 ];
 
 let skin =
-  "https://zequencer.mypinata.cloud/ipfs/Qme7hXVjGevN7fReT2tcErkyuNzczHdsrcCnMwkeDZfkx5";
+  "https://zora-dev.mypinata.cloud/ipfs/bafybeia5gfyxfpes2d6h3h34evecrhq4b6itqfxsjm64tllazt47j2vqam?id=15";
 
 let juiceSamples = [
-  "https://zequencer.io/ipfs/QmYh8ryEJ5X3RD4wwkuRpyhgXwiQdWsqmfwgDhUtE4qonZ",
-  "https://zequencer.io/ipfs/Qmc43UqNSmcePMaLNP1PCK2rHRmYDJkvMPw2j5xxhWSAWi",
-  "https://zequencer.io/ipfs/QmPrtDNY42aiJGLAMp2u2C9CYfFHADv6MA8ETQ29E8LYbV",
+  "https://ipfs.io/ipfs/bafybeida46ln4hrypxyt4igvjmbsakn5hysstepjbfv3qhcrs6ofvi7qai", // Melody 1 🍄 Nate Fox X SPORES 🍄 ETHglobal STEMs 🍄
+  "https://ipfs.io/ipfs/bafybeiai6i25mroyjugpof22qxyxlusrpgkdcd3ow6ypagkn2kuvhxo3ty", // Melody 2 🍄 Nate Fox X SPORES 🍄 ETHglobal STEMs 🍄
+  "https://ipfs.io/ipfs/bafybeida46ln4hrypxyt4igvjmbsakn5hysstepjbfv3qhcrs6ofvi7qai", // Melody 1 🍄 Nate Fox X SPORES 🍄 ETHglobal STEMs 🍄
 ];
 
 function App() {
@@ -52,18 +52,20 @@ function App() {
       <div>Cross Fade: {crossFade}</div>
       {isStuttering ? <div>Stuttering at 1/{stutterRate} rate</div> : ""}
 
-
-      <SporeEmbed
-        main={main} // url to main track (can be switched w/o interrupting)
-        alternate={alternate} // url to alternate track (can be switched w/o interrupting)
-        juiceSamples={juiceSamples} // list of URLs to samples
-        backgroundColor="black" // background color of Spore itselft
-        color="blue" // color of waveform below
-        skin={skin} // URL to image to be morphed on skin
-        crossFade={crossFadeUI} // set this to override the cross fade between main / alternate (w/o using the Spore)
-      />
+      <div class="spore">
+        <SporeEmbed
+          main={main} // url to main track (can be switched w/o interrupting)
+          alternate={alternate} // url to alternate track (can be switched w/o interrupting)
+          juiceSamples={juiceSamples} // list of URLs to samples
+          backgroundColor="black" // background color of Spore itselft
+          color="blue" // color of waveform below
+          skin={skin} // URL to image to be morphed on skin
+          crossFade={crossFadeUI} // set this to override the cross fade between main / alternate (w/o using the Spore)
+        />
+      </div>
     </div>
   );
 }
 
 export default App;
+
